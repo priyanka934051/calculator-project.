@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="screen" placeholder="0" readonly>
+        </div>
+
+        <div class="toggle-container" onclick="toggleScientific()">
+            <span id="arrow-icon">︾</span>
+        </div>
+
+        <div id="scientific-panel" class="keypad scientific-hidden">
+            <button class="btn sci" onclick="appendValue('√')">√</button>
+            <button class="btn sci" onclick="appendValue('π')">π</button>
+            <button class="btn sci" onclick="appendValue('^')">^</button>
+            <button class="btn sci" onclick="factorial('!')">!</button>
+            <button class="btn sci">Deg</button>
+            <button class="btn sci" onclick="appendValue('sin')">sin</button>
+            <button class="btn sci" onclick="appendValue('cos')">cos</button>
+            <button class="btn sci" onclick="appendValue('tan')">tan</button>
+            <button class="btn sci">Inv</button>
+            <button class="btn sci" onclick="appendValue('e')">e</button>
+            <button class="btn sci" onclick="appendValue('ln')">ln</button>
+            <button class="btn sci" onclick="appendValue('log')">log</button>
+        </div>
+
+        <div class="keypad">
+            <button class="btn ac" onclick="clearScreen()">AC</button>
+            <button class="btn sci" onclick="appendValue('()')">( )</button>
+            <button class="btn sci" onclick="appendValue('%')">%</button>
+            <button class="btn op" onclick="appendValue('/')">÷</button>
+            
+            <button class="btn num" onclick="appendValue('7')">7</button>
+            <button class="btn num" onclick="appendValue('8')">8</button>
+            <button class="btn num" onclick="appendValue('9')">9</button>
+             <button class="btn op" onclick="appendValue('*')">×</button>
+            
+            <button class="btn num" onclick="appendValue('4')">4</button>
+            <button class="btn num" onclick="appendValue('5')">5</button>
+            <button class="btn num" onclick="appendValue('6')">6</button>
+            <button class="btn op" onclick="appendValue('-')">−</button>
+            
+            <button class="btn num" onclick="appendValue('1')">1</button>
+            <button class="btn num" onclick="appendValue('2')">2</button>
+            <button class="btn num" onclick="appendValue('3')">3</button>
+            <button class="btn op" onclick="appendValue('+')">+</button>
+            
+            <button class="btn num" onclick="appendValue('0')">0</button>
+            <button class="btn num" onclick="appendValue('.')">.</button>
+            <button class="btn num" onclick="backspace()">⌫</button>
+            <button class="btn equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
