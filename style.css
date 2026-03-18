@@ -1,0 +1,75 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 350px;
+    background-color: #17171c;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#screen {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 50px;
+    text-align: right;
+    padding: 20px 0;
+    outline: none;
+}
+
+/* Arrow styling */
+.toggle-container {
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    color: #10b981; /* Green color like your drawing */
+    font-size: 20px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Hide scientific panel by default */
+.scientific-hidden {
+    display: none;
+    margin-bottom: 10px;
+}
+
+/* Buttons styling from previous design */
+.btn { height: 60px; border-radius: 50px; border: none; font-size: 18px; cursor: pointer; }
+.num { background-color: #2e2f33; color: white; }
+.sci { background-color: #3d4251; color: #cbd5e1; }
+.op { background-color: #3d4251; color: #cbd5e1; }
+.ac { background-color: #3b5082; color: white; }
+.equal { background-color: #e2b7d9; color: #17171c; }
+
+.btn:active { opacity: 0.7; }
+
+
+
+/* Gradient Background Code */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Blue aur Purple ka mix gradient */
+    background: linear-gradient(135deg, #ad43cd, #1ba5af, #57c53f);
+    
+    /* Alternative: Agar aapko thoda vibrant chahiye */
+    /* background: linear-gradient(to right, #434343 0%, black 100%); */
+}
